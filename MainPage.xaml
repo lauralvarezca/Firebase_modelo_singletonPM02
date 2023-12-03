@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Firebase_modelo_singleton.MainPage"
+             BackgroundColor="#F8F8F8">
+
+    <StackLayout Padding="20" Spacing="15" VerticalOptions="CenterAndExpand">
+        <!-- Campo de Texto para Nombre -->
+        <Entry x:Name="nombreEntry" Placeholder="Nombre" FontSize="16" BackgroundColor="White" />
+
+        <!-- Campo de Texto para Edad -->
+        <Entry x:Name="edadEntry" Placeholder="Edad" Keyboard="Numeric" FontSize="16" BackgroundColor="White" />
+
+        <!-- Botón Salvar -->
+        <Button x:Name="guardarButton" Text="Guardar" Clicked="guardarButton_Clicked" BackgroundColor="#4CAF50" TextColor="White" FontSize="16" />
+
+        <!-- Botón Listar Personas -->
+        <Button x:Name="listarButton" Text="Listar Personas" Clicked="listarButton_Clicked" BackgroundColor="#2196F3" TextColor="White" FontSize="16"/>
+    </StackLayout>
+
+</ContentPage>
